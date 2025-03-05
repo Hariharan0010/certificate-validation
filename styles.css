@@ -91,13 +91,13 @@ h1 {
 }
 /* Increase font size of CERTIFICATE VALIDATION */
 .certificate-title {
-    font-size: 38px;  /* Adjust size as needed */
+    font-size: 50px;  /* Adjust size as needed */
     font-weight: bold;
 }
 
 /* Increase font size of Certificate Status */
 .certificate-status {
-    font-size: 28px;  /* Adjust size as needed */
+    font-size: 50px;  /* Adjust size as needed */
     font-weight: bold;
     color: green;  /* Keeps it green */
 }
