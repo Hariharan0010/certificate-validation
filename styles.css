@@ -102,7 +102,7 @@ h1 {
     color: green;  /* Keeps it green */
 }
 .certificate-box p {
-    font-size: 24px;  /* Adjust the font size for other details */
+    font-size: 22px;  /* Adjust the font size for other details */
     margin: 10px 0;  /* Add spacing between lines */
 }
 
