@@ -1,17 +1,22 @@
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Make sure the body takes full height and follows a column layout */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #f8f9fa;
     color: #333;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures body takes full height */
 }
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -51,8 +56,10 @@ body {
     background-color: #6c63ff;
     color: #fff;
 }
+
+/* Main Content */
 .container {
-    flex: 1; /* Pushes footer to bottom */
+    flex: 1; /* This ensures the container expands and pushes the footer down */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,6 +89,8 @@ h1 {
     font-size: 16px;
     margin: 10px 0;
 }
+
+/* Footer Fix */
 .footer {
     text-align: center;
     padding: 15px;
@@ -89,5 +98,5 @@ h1 {
     font-size: 14px;
     color: #777;
     width: 100%;
-    margin-top: auto; /* Ensures it stays at the bottom */
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
