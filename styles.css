@@ -101,6 +101,10 @@ h1 {
     font-weight: bold;
     color: green;  /* Keeps it green */
 }
+.certificate-box p {
+    font-size: 28px;  /* Adjust the font size for other details */
+    margin: 10px 0;  /* Add spacing between lines */
+}
 
 
 /* Footer Fix */
