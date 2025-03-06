@@ -1,124 +1,71 @@
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Make sure the body takes full height and follows a column layout */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center;
-}
-
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;  /* Make navbar sticky */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent; /* Initially transparent */
+    transition: background 0.3s ease-in-out; /* Smooth background change */
+    z-index: 1000; /* Ensure it stays above other elements */
 }
-.navbar img {
-    width: 80px;
+
+/* Change navbar background when scrolled */
+.navbar.scrolled {
+    background: white; /* Add solid background on scroll */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
+/* Navbar Links */
 .nav-links {
     display: flex;
     gap: 20px;
 }
+
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: black !important;  /* Ensure visibility */
     font-weight: 600;
     font-size: 15px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
+
 .nav-links a:hover {
     color: #6c63ff;
 }
+
+/* Button Styling */
 .btn {
-    border: 2px solid #6c63ff;
+    border: 2px solid black;
     padding: 7px 15px;
     border-radius: 5px;
-    color: #6c63ff;
+    color: black;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
     transition: all 0.3s ease;
 }
+
 .btn:hover {
-    background-color: #6c63ff;
-    color: #fff;
+    background-color: black;
+    color: white;
 }
 
-/* Main Content */
-.container {
-    flex: 1; /* This ensures the container expands and pushes the footer down */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+    
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
 }
-h1 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a1a1a;
-}
-.certificate-box {
-    width: 90%;
-    max-width: 500px;
-    background-color: white;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.certificate-status {
-    font-size: 22px;
-    font-weight: 700;
-    color: green;
-}
-.certificate-box p {
-    font-size: 16px;
-    margin: 10px 0;
-}
-/* Increase font size of CERTIFICATE VALIDATION */
-.certificate-title {
-    font-size: 38px;  /* Adjust size as needed */
-    font-weight: bold;
-}
-
-/* Increase font size of Certificate Status */
-.certificate-box .certificate-status {
-    font-size: 33px !important;  /* Adjust size as needed */
-    font-weight: bold;
-    color: green;  /* Keeps it green */
-}
-.certificate-box p {
-    font-size: 18px;/* Adjust the font size for other details */
-    line-height: 2;
-    margin: 10px 0;  /* Add spacing between lines */
-}
-
-
-/* Footer Fix */
-.footer {
-    text-align: center;
-    padding: 15px;
-    background-color: transparent;
-    font-size: 14px;
-    color: #777;
-    width: 100%;
-    margin-top: auto;
-}
-.footer p {
-    line-height: 1.5; /* Ensures proper spacing */
-}
-
