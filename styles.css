@@ -6,26 +6,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Make sure the body takes full height and follows a column layout */
+/* Full Page Layout */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Light background for the whole page */
     color: #333;
     text-align: center;
 }
 
-/* Navbar */
+/* Navbar - Full Width */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    position: relative;  /* Changed from absolute to relative */
     width: 100%;
-    background: white; /* Same background as content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background: white; /* Same background as footer */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -33,7 +35,6 @@ body {
     width: 80px;
 }
 
-/* Navbar Links */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -41,7 +42,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: black;  
+    color: black;
     font-weight: 600;
     font-size: 15px;
     transition: color 0.3s ease;
@@ -70,29 +71,29 @@ body {
 
 /* Main Content */
 .container {
-    flex: 1; /* Ensures the container expands and pushes the footer down */
+    flex: 1; /* Ensures it grows while pushing footer down */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px 40px; /* Added top padding so content isn't covered by navbar */
+    padding: 120px 20px 40px; /* Increased top padding so content isn't covered by navbar */
+    max-width: 600px; /* Limit width to keep it separate from navbar/footer */
+    margin: auto; /* Center it horizontally */
+}
+
+/* Certificate Box */
+.certificate-box {
+    width: 100%; /* Keep it within the container */
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-size: 28px;
     font-weight: 700;
     color: #1a1a1a;
-}
-
-/* Certificate Box */
-.certificate-box {
-    width: 90%;
-    max-width: 500px;
-    background-color: white;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .certificate-status {
@@ -102,41 +103,24 @@ h1 {
 }
 
 .certificate-box p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 2;
     margin: 10px 0;
 }
 
-/* Increase font size of CERTIFICATE VALIDATION */
-.certificate-title {
-    font-size: 38px;  /* Adjust size as needed */
-    font-weight: bold;
-}
-
-/* Increase font size of Certificate Status */
-.certificate-box .certificate-status {
-    font-size: 33px !important;  /* Adjust size as needed */
-    font-weight: bold;
-    color: green;  /* Keeps it green */
-}
-
-.certificate-box p {
-    font-size: 18px; /* Adjust the font size for other details */
-    line-height: 2;
-    margin: 10px 0; /* Add spacing between lines */
-}
-
-/* Footer */
+/* Footer - Separate from Box */
 .footer {
     text-align: center;
     padding: 15px;
-    background-color: white; /* Same as navbar */
+    background-color: white; /* Keep footer separate */
     font-size: 14px;
     color: #777;
     width: 100%;
     margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .footer p {
-    line-height: 1.5; /* Ensures proper spacing */
+    line-height: 1.5;
 }
 
