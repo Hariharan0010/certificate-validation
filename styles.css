@@ -23,7 +23,7 @@ body {
     align-items: center;
     padding: 15px 10%;
     background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15); /* More visible line */
 }
 .navbar img {
     width: 80px;
