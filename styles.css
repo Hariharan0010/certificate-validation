@@ -16,14 +16,14 @@ body {
     text-align: center;
 }
 
-/* Navbar */
+/* Navbar - Updated to Match Footer */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: transparent;  /* Now same as footer */
+    box-shadow: none;  /* Remove shadow */
 }
 .navbar img {
     width: 80px;
@@ -102,17 +102,16 @@ h1 {
     color: green;  /* Keeps it green */
 }
 .certificate-box p {
-    font-size: 18px;/* Adjust the font size for other details */
+    font-size: 18px; /* Adjust the font size for other details */
     line-height: 2;
     margin: 10px 0;  /* Add spacing between lines */
 }
 
-
-/* Footer Fix */
+/* Footer */
 .footer {
     text-align: center;
     padding: 15px;
-    background-color: transparent;
+    background-color: transparent; /* Ensures it matches the navbar */
     font-size: 14px;
     color: #777;
     width: 100%;
@@ -121,4 +120,3 @@ h1 {
 .footer p {
     line-height: 1.5; /* Ensures proper spacing */
 }
-
