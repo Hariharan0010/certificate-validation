@@ -22,8 +22,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background-color: transparent;  /* Now same as footer */
-    box-shadow: none;  /* Remove shadow */
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .navbar img {
     width: 80px;
