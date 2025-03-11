@@ -81,17 +81,19 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .certificate-status {
-    font-size: 24px; /* Adjust the font size */
+    font-size: 24px; /* Adjust size */
     font-weight: 700;
-    color: #198754; /* Dark green */
+    color: #32CD32; /* Parrot green */
     text-align: center;
+    line-height: 1.2; /* Reduce space between lines */
 }
 
 .status-valid {
     display: block;  /* Moves to the next line */
     font-size: 33px; /* Bigger text */
     font-weight: 900; /* Extra bold */
-    color: green; /* Lighter green */
+    color: green; /* Darker green */
+    margin-top: -5px; /* Reduce the gap */
 }
 
 .certificate-box p {
